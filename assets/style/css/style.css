@@ -158,31 +158,6 @@ i {
 	font-weight: bold;
 }
 
- @-webkit-keyframes scale-in-hor-center {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    opacity: 1;
-  }
-}
-@keyframes scale-in-hor-center {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    opacity: 1;
-  }
-}
-
 .contact {
 	padding: 10px 20px 10px 20px;
 	background-color: #1A1A1A;
@@ -197,8 +172,9 @@ i {
 }
 
 .contact:hover {
-	-webkit-animation: scale-in-hor-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-hor-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-filter: brightness(125%);  
+	-moz-filter: brightness(125%);  
+		filter: brightness(125%);  
 	
 }
 
